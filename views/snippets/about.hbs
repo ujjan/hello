@@ -1,0 +1,10 @@
+
+<h1>All todos</h1>
+{{> flash }}
+<ul>
+    {{#each snippets}}
+        <li>{{ name }} <a href="todo/delete/{{id}}">Remove</a><br> {{ snippets }} </li>
+    {{/each}}
+</ul>
+ <a href="/about/create">Make new Snippets</a>
+

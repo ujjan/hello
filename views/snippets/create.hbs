@@ -1,0 +1,16 @@
+
+{{> header}}
+
+
+{{#if error}}
+    <p>
+        Error: {{error}}
+    </p>
+{{/if}}
+<link href="../stylesheets/style.css" rel="stylesheet">
+<form class="" action="/about/create" method="post">
+
+    <input type="text" name="name" value="" placeholder="Name"><br>
+    <textarea class="snippets" type="text" name="snippets" value="" placeholder="Message"></textarea><br>
+    <button class="btn btn-warning">Make New Snippet!</button>
+</form>
